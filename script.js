@@ -51,7 +51,7 @@ window.addEventListener('load', startCountersIfVisible);
 /* ---------- GALLERY DATA ---------- */
 /* Keep filenames as in your provided structure; arrays defined per id */
 const galleries = {
-  1: ["image/lancat/lancast2.jpeg","image/lancat/Lancast3.jpeg","image/lancat/Lancat1.jpeg","image/lancat/Lancst4.jpeg","image/lancast/Lancast5.jpeg"],
+  1: ["image/lancat/lancast2.jpeg","image/lancat/Lancast3.jpeg","image/lancat/Lancat1.jpeg","image/lancat/Lancst4.jpeg","image/lancat/Lancast5.jpeg"],
   2: ["image/Hotel castle rock inn/CR.jpeg","image/Hotel castle rock inn/CR1.jpeg","image/Hotel castle rock inn/CR2.jpeg"],
   3: ["image/Hotel Aqua Galaxy/AAG.jpeg","image/Hotel Aqua Galaxy/AG.jpeg","image/Hotel Aqua Galaxy/AG1.jpeg","image/Hotel Aqua Galaxy/AG2.jpeg","image/Hotel Aqua Galaxy/AG3.jpeg"],
   4: ["image/HVS/HVS.jpeg","image/HVS/HVS1.jpeg","image/HVS/HVS2.jpeg","image/HVS/HVS3.jpeg","image/HVS/HVS4.jpeg"],
