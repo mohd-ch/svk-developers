@@ -66,11 +66,21 @@ body{
   color:white;font-weight:700;font-size:20px;
   box-shadow: 0 6px 20px rgba(60,80,140,0.35);
 }
-.brand-text h1{
-  margin:0;font-size:28px;letter-spacing:1px;
-  background: linear-gradient(90deg,#fff,#ffd36b);
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+.brand-text h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+
+  background: linear-gradient(90deg, #fff, #ffd36b);
+
+  /* Standard property */
+  background-clip: text;
+
+  /* Vendor prefixes */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .subtitle{margin:4px 0 0;color:rgba(255,255,255,0.85);font-size:14px;max-width:600px}
 
 /* Stats wrapper */
