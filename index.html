@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SVK Developers — Property Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV / HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo-crest" aria-hidden="true">SVK</div>
+        <div class="brand-text">
+          <h1>SVK DEVELOPERS</h1>
+          <p class="subtitle">Founders & Property Developers — High-value residential, commercial & hospitality assets</p>
+        </div>
+      </div>
+
+      <!-- Stats row (responsive grid) + Contact CTA -->
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-end;">
+        <div class="stat-wrapper" aria-hidden="false">
+          <div class="stat-card">
+            <div class="stat-number" data-target="7">0</div>
+            <div class="stat-label">Properties</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-target="250">0</div>
+            <div class="stat-label">Million Asset Value (INR)</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+
+        <!-- Primary phone CTA you asked to add -->
+        <div style="display:flex;gap:8px;align-items:center;">
+          <a id="primaryPhone" class="phone-cta" href="tel:+918108465827">📞 +91 81084 65827</a>
+          <button id="copyPrimaryPhone" class="phone-copy" title="Copy phone number">Copy</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FOUNDERS -->
+  <main>
+    <section class="section founders" aria-labelledby="foundersHeading">
+      <div class="container">
+        <h2 id="foundersHeading">Founders</h2>
+        <p class="lead center">Sainudeen V K &amp; Ansar C M — combining market insight, hands-on operations and design-led thinking to create purpose-driven properties across South India.</p>
+
+        <!-- New founders cards row -->
+        <div class="founders-grid" role="list">
+          <article class="founder-card" role="listitem">
+            <div class="founder-avatar">
+              <img src="image/partners/Ansar1.jpg" alt="Ansar C M — Co-founder" onerror="this.onerror=null;this.src='image/partners/Ansar1.png'">
+            </div>
+            <div class="founder-meta">
+              <h3>Ansar C M</h3>
+              <p class="muted">Co-founder — Operations & Growth</p>
+              <p class="muted small">Hands-on operator with a focus on asset performance and guest experience.</p>
+            </div>
+            <a class="founder-call" href="tel:+918108465827" aria-label="Call Ansar">Call</a>
+          </article>
+
+          <article class="founder-card" role="listitem">
+            <div class="founder-avatar">
+              <img src="image/partners/Sainudheen1png.png" alt="Sainudeen V K — Co-founder" onerror="this.onerror=null;this.src='image/partners/Sainudheen1.png'">
+            </div>
+            <div class="founder-meta">
+              <h3>Sainudeen V K</h3>
+              <p class="muted">Co-founder — Design & Development</p>
+              <p class="muted small">Product-minded developer focused on design-led assets and long term value.</p>
+            </div>
+            <a class="founder-call" href="tel:+918108465827" aria-label="Call Sainudeen">Call</a>
+          </article>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Projects</h2>
+
+          <div class="filter-buttons" role="tablist" aria-label="Filter projects">
+            <button class="filter-btn active" onclick="filterProjects(event,'all')">All</button>
+            <button class="filter-btn" onclick="filterProjects(event,'owned')">Owned</button>
+            <button class="filter-btn" onclick="filterProjects(event,'leased')">Leased</button>
+          </div>
+        </div>
+
+        <div class="projects" id="projectsGrid">
+
+          <!-- Template: each .project-card has class 'owned' or 'leased' and unique data-id for gallery -->
+          <article class="project-card owned" data-id="1">
+            <div class="project-media">
+              <img src="image/lancat/Lancast Bg.jpeg" alt="Hotel Lancaster exterior">
+            </div>
+            <div class="project-info">
+              <span class="tag owned">OWNED</span>
+              <h3>Hotel Lancaster</h3>
+              <p class="meta">Kurla (W), Mumbai • 37 Rooms</p>
+              <button class="gallery-btn" onclick="openGallery(1)">View Gallery</button>
+            </div>
+          </article>
+
+          <article class="project-card owned" data-id="2">
+            <div class="project-media">
+              <img src="image/Hotel castle rock inn/CR.jpeg" alt="Hotel Castle Rock Inn exterior">
+            </div>
+            <div class="project-info">
+              <span class="tag owned">OWNED</span>
+              <h3>Hotel Castle Rock Inn</h3>
+              <p class="meta">Marol Maroshi Road, Mumbai • 18 Rooms</p>
+              <button class="gallery-btn" onclick="openGallery(2)">View Gallery</button>
+            </div>
+          </article>
+
+          <article class="project-card owned" data-id="3">
+            <div class="project-media">
+              <img src="image/Hotel Aqua Galaxy/AG.jpeg" alt="Hotel Aqua Galaxy exterior">
+            </div>
+            <div class="project-info">
+              <span class="tag owned">OWNED</span>
+              <h3>Hotel Aqua Galaxy</h3>
+              <p class="meta">Andheri East, Mumbai • 28 Rooms</p>
+              <button class="gallery-btn" onclick="openGallery(3)">View Gallery</button>
+            </div>
+          </article>
+
+          <article class="project-card leased" data-id="4">
+            <div class="project-media">
+              <img src="image/HVS/HVS.jpeg" alt="Hotel Vertigo Suite exterior">
+            </div>
+            <div class="project-info">
+              <span class="tag leased">LEASED</span>
+              <h3>Hotel Vertigo Suite</h3>
+              <p class="meta">Kurla (W), Mumbai • 38 Rooms</p>
+              <button class="gallery-btn" onclick="openGallery(4)">View Gallery</button>
+            </div>
+          </article>
+
+          <article class="project-card leased" data-id="5">
+            <div class="project-media">
+              <img src="image/Victory Park/VP.jpeg" alt="Hotel Victoria Park exterior">
+            </div>
+            <div class="project-info">
+              <span class="tag leased">LEASED</span>
+              <h3>Hotel Victoria Park</h3>
+              <p class="meta">Masjid Bunder (W), Mumbai • 33 Rooms</p>
+              <button class="gallery-btn" onclick="openGallery(5)">View Gallery</button>
+            </div>
+          </article>
+
+          <article class="project-card leased" data-id="6">
+            <div class="project-media">
+              <img src="image/Elegent/Elegent2.jpeg" alt="Hotel Elegant exterior">
+            </div>
+            <div class="project-info">
+              <span class="tag leased">LEASED</span>
+              <h3>Hotel Elegant</h3>
+              <p class="meta">Zaveri Bazar, Mumbai • 29 Rooms</p>
+              <button class="gallery-btn" onclick="openGallery(6)">View Gallery</button>
+            </div>
+          </article>
+
+          <article class="project-card leased" data-id="7">
+            <div class="project-media">
+              <img src="image/Empire/Empire bg.png" alt="Empire Suite exterior">
+            </div>
+            <div class="project-info">
+              <span class="tag leased">LEASED</span>
+              <h3>Empire Suite</h3>
+              <p class="meta">Andheri (E), Mumbai • 23 Rooms</p>
+              <button class="gallery-btn" onclick="openGallery(7)">View Gallery</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GALLERY MODAL -->
+  <div id="galleryModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-content" role="document" aria-labelledby="galleryTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close gallery">&times;</button>
+
+      <div class="modal-body">
+        <div class="modal-image-wrap">
+          <img id="modalImage" src="" alt="Property photo">
+        </div>
+
+        <div class="modal-thumbs" id="modalThumbs" aria-label="Gallery thumbnails">
+          <!-- thumbnails inserted by JS -->
+        </div>
+
+        <div class="modal-controls">
+          <button id="prevBtn" aria-label="Previous image">‹</button>
+          <button id="nextBtn" aria-label="Next image">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <h3>Let's Talk</h3>
+      <p>Investor, partner or client — tell us about your opportunity. We respond within 3 business days.</p>
+      <p class="contact"><strong>Primary Phone:</strong> +91 81084 65827 &nbsp; • &nbsp; <strong>Office:</strong> +91 8108585994 &nbsp; • &nbsp; <strong>Location:</strong> Mumbai, India</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
