@@ -222,6 +222,36 @@ body{
 .site-footer{ padding:36px 0; background:#06070a; color:#e6e6e6; text-align:center; margin-top:36px; }
 .site-footer h3{ margin:0 0 8px 0; color:var(--accent-gold); }
 
+
+/* FOOTER */
+.site-footer{ 
+  padding:36px 0; 
+  background:#06070a; 
+  color:#e6e6e6; 
+  text-align:center; 
+  margin-top:36px; 
+}
+.site-footer h3{ 
+  margin:0 0 8px 0; 
+  color:var(--accent-gold); 
+}
+
+/* NEW – footer office & address styling */
+.footer-office-title {
+  margin-top: 12px;
+  color: #ffd36b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.site-footer .address {
+  margin-top: 6px;
+  color: #cfcfcf;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
 /* small screens */
 @media (max-width: 980px){
   .header-inner{ grid-template-columns: 1fr 1fr; gap:16px; align-items:start; }
